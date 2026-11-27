@@ -88,13 +88,14 @@ configuration:
       opcija nikada neće biti potrebna, pa je menjajte samo ako znate šta
       radite i/ili ako vam je to zatraženo.
   safe_mode:
-    name: Omogući bezbedni režim (Safe Mode)
+    name: Омогући безбедни режим (Safe Mode)
     description: >-
-      Ovo podešavanje prebacuje vašu mrežu u bezbedni režim, što može značajno
-      smanjiti njene performanse, ali može pomoći da se mreža pokrene kako biste
-      rešili probleme, preuzeli evidenciju (logove) i slično. U većini
-      slučajeva korisnicima ova opcija nikada neće biti potrebna, pa je
-      menjajte samo ako znate šta radite i/ili ako vam je to zatraženo.
+      Ово подешавање пребацује вашу мрежу у безбедни режим, што може значајно
+      смањити перформансе ваше мреже, али такође може помоћи да се мрежа
+      покрене и проради како бисте могли да решите проблеме, преузмете
+      евиденцију (логове) итд. У већини случајева корисницима ова опција никада
+      неће бити потребна, па је мењајте само ако знате шта радите и/или ако
+      вам је то затражено.
 network:
-  3000/tcp: Z-Wave JS WebSocket komunikacioni port
-  8091/tcp: Z-Wave JS UI veb port
+  3000/tcp: Z-Wave JS WebSocket комуникациони порт
+  8091/tcp: Z-Wave JS UI веб порт
