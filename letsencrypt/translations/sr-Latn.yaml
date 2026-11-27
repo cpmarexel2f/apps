@@ -1,0 +1,63 @@
+---
+configuration:
+  domains:
+    name: Domeni
+    description: >-
+      Nazivi domena za koje se izdaju sertifikati, koristite "*.vasdomen.com" za
+      zamenske (wildcard) sertifikate.
+  email:
+    name: E-pošta
+    description: Adresa e-pošte koja će biti registrovana za sertifikat.
+  keyfile:
+    name: Datoteka privatnog ključa
+    description: Putanja na koju će biti smeštena datoteka privatnog ključa.
+  certfile:
+    name: Datoteka sertifikata
+    description: Putanja na koju će biti smeštena datoteka sertifikata.
+  challenge:
+    name: Provera (Challenge)
+    description: Vrsta provere koja se koristi za potvrdu vlasništva nad domenom.
+  acme_server:
+    name: Prilagođeni ACME server
+    description: >-
+      Podrazumevano ova aplikacija koristi Let's Encrypt servere. Međutim, možete
+      navesti drugi ACME server.
+  acme_root_ca_cert:
+    name: ACME korenski CA sertifikat
+    description: >-
+      Relevantno samo za prilagođeni ACME server koji koristi sertifikat potpisan od strane
+      nepouzdanog sertifikacionog tela (CA) koje je potrebno dodati u skladište
+      pouzdanih sertifikata.
+  dns:
+    name: DNS
+    description: Podešavanje DNS provajdera
+  key_type:
+    name: Tip ključa
+    description: >-
+      Izaberite tip ključa sertifikata. Ako nije podešeno, automatski će se prepoznati na osnovu
+      tipa ključa postojećeg sertifikata ili će se podrazumevano koristiti ecdsa.
+  elliptic_curve:
+    name: Eliptična kriva
+    description: >-
+      Eliptična kriva za ECDSA ključeve. Ova opcija se mora koristiti kada je Tip ključa
+      podešen na ECDSA. Ako nije podešeno, koristiće se podrazumevana vrednost za Certbot.
+  dry_run:
+    name: Probni rad
+    description: >-
+      Pokreće probni rad certbot-a za zahtevanje sertifikata od Let's Encrypt-a.
+      Zanemaruje se ako se koristi prilagođeni server.
+  test_cert:
+    name: Izdaj probne sertifikate
+    description: >-
+      Preuzima probni sertifikat sa Let's Encrypt testnog (staging) servera.
+      Zanemaruje se ako se koristi prilagođeni server.
+  verbose:
+    name: Detaljan režim
+    description: >-
+      Pokreće certbot u detaljnom režimu prikaza evidencije.
+  force_renew:
+    name: Prinudno obnavljanje
+    description: >-
+      Prinuđuje obnavljanje sertifikata čak i ako nije blizu isteka.
+network:
+  80/tcp: Potrebno samo za HTTP proveru
