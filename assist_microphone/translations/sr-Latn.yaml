@@ -1,0 +1,50 @@
+---
+configuration:
+  awake_wav:
+    name: WAV zvuk buđenja
+    description: >-
+      Putanja do WAV datoteke koja se pušta kada se prepozna reč za buđenje (prazno za onemogućavanje).
+  done_wav:
+    name: WAV zvuk završetka
+    description: >-
+      Putanja do WAV datoteke koja se pušta kada se glasovna komanda završi (prazno za
+      onemogućavanje).
+  timer_finished_wav:
+    name: WAV zvuk isteka tajmera
+    description: >-
+      Putanja do WAV datoteke koja se pušta kada tajmer istekne (prazno za onemogućavanje,
+      podrazumevano je /usr/src/sounds/timer_finished.wav).
+  timer_repeat_count:
+    name: Broj ponavljanja zvuka isteka tajmera
+    description: >-
+      Broj ponavljanja datoteke timer_finished_wav (podrazumevano je 3).
+  timer_repeat_delay:
+    name: Pauza između ponavljanja tajmera
+    description: >-
+      Zadržavanje pre ponavljanja datoteke timer_finished_wav, u sekundama (podrazumevano je 0.75).
+  noise_suppression:
+    name: Potiskivanje šuma
+    description: >-
+      Nivo potiskivanja šuma (0 je onemogućeno, 4 je maksimum).
+  auto_gain:
+    name: Automatsko pojačanje
+    description: >-
+      Automatsko pojačavanje jačine zvuka mikrofona (0 je onemogućeno, 31 je maksimum).
+  mic_volume_multiplier:
+    name: Množilac jačine mikrofona
+    description: >-
+      Množi jačinu zvuka mikrofona fiksnom vrednošću (1.0 = bez promene, 2.0 = dvostruko
+      glasnije).
+  sound_enabled:
+    name: Zvuk omogućen
+    description: >-
+      Omogućava ili onemogućava izlazni zvuk.
+  sound_volume_multiplier:
+    name: Množilac jačine izlaznog zvuka
+    description: >-
+      Množi jačinu izlaznog zvuka fiksnom vrednošću (1.0 = bez promene, 2.0 = dvostruko
+      glasnije). Podrazumevana vrednost je 1.0.
+  debug_logging:
+    name: Evidencija za otklanjanje grešaka
+    description: >-
+      Omogućava evidenciju za otklanjanje grešaka.
