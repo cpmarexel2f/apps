@@ -1,0 +1,34 @@
+---
+configuration:
+  defaults:
+    name: Надређени сервери
+    description: Подразумеване вредности су надређени DNS сервери.
+  forwards:
+    name: Прослеђивања
+    description: >-
+      Ова опција вам омогућава да наведете домене који се прослеђују другом
+      (не подразумеваном) надређеном DNS серверу.
+  hosts:
+    name: Хостови
+    description: >-
+      Ова опција вам омогућава да дефинишете локалне статичке одговоре за ваш DNS сервер.
+  services:
+    name: Сервиси
+    description: Ова опција вам омогућава да дефинишете srv-host записе.
+  cnames:
+    name: CNAME записи
+    description: Дефинишите CNAME записе које ће DNSMasq разрешавати.
+  txts:
+    name: TXT записи
+    description: Дефинишите TXT записе које ће DNSMasq разрешавати.
+  ptrs:
+    name: PTR записи
+    description: >-
+      Обрнута IP адреса са суфиксом „.in-addr.arpa“
+      (IP 1.2.3.4 → 4.3.2.1.in-addr.arpa)
+  log_queries:
+    name: Бележење упита
+    description: Бележи све DNS захтеве у евиденцију.
+network:
+  53/tcp: TCP порт за DNS захтеве.
+  53/udp: UDP порт за DNS захтеве.
