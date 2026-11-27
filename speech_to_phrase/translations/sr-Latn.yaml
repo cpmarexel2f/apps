@@ -1,0 +1,8 @@
+---
+configuration:
+  debug_logging:
+    name: Evidencija za otklanjanje grešaka (Debug)
+    description: >-
+      Omogući evidenciju za otklanjanje grešaka.
+network:
+  10300/tcp: speech-to-phrase Wyoming protokol
