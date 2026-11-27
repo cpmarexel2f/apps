@@ -1,0 +1,20 @@
+---
+configuration:
+  threshold:
+    name: Prag osetljivosti
+    description: >-
+      Prag aktivacije (0–1), gde viša vrednost znači manje aktivacija. Pogledajte
+      nivo okidanja za odnos između aktivacija i prepoznavanja reči za
+      buđenje.
+  trigger_level:
+    name: Nivo okidanja
+    description: >-
+      Broj aktivacija pre nego što se registruje prepoznavanje. Viši nivo
+      okidanja znači manje prepoznavanja.
+  debug_logging:
+    name: Evidencija za otklanjanje grešaka
+    description: >-
+      Omogućava evidenciju za otklanjanje grešaka. Korisno za praćenje svakog
+      prepoznavanja reči za buđenje u evidenciji.
+network:
+  10400/tcp: openWakeWord Wyoming protokol
