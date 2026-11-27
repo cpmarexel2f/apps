@@ -1,0 +1,36 @@
+---
+configuration:
+  domains:
+    name: Domeni
+    description: >-
+      Lista DuckDNS poddomena registrovanih na vašem nalogu. Prihvatljiv
+      format naziva je `moj-domen.duckdns.org`.
+  token:
+    name: Token
+    description: >-
+      DuckDNS token za autentifikaciju koji se nalazi na vrhu početne stranice
+      vašeg DuckDNS naloga. Token je neophodan za bilo kakve izmene na
+      poddomenima registrovanim na vašem nalogu.
+  aliases:
+    name: Alijasi
+    description: Lista alijasa domena podešenih u opciji `domains`.
+  lets_encrypt:
+    name: Let's Encrypt
+    description: Podešavanje Let's Encrypt opcija
+  seconds:
+    name: Sekunde
+    description: >-
+      Broj sekundi čekanja pre ažuriranja DuckDNS poddomena i
+      obnavljanja Let's Encrypt sertifikata.
+  ipv4:
+    name: IPv4
+    description: >-
+      Podrazumevano će DuckDNS automatski otkriti vašu IPv4 adresu i nju koristiti.
+      Ova opcija vam omogućava da zaobiđete automatsko otkrivanje i ručno
+      unesete IPv4 adresu. Vrednost 'none' onemogućava IPv4 ažuriranja.
+  ipv6:
+    name: IPv6
+    description: >-
+      DuckDNS trenutno ne može automatski da otkrije vašu IPv6 adresu. Ova opcija
+      omogućava da navedete 'default' ili naziv interfejsa za korišćenje IPv6
+      adrese hosta, ili alternativno možete ručno uneti adresu.
