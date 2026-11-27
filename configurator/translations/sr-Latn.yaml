@@ -1,0 +1,33 @@
+---
+configuration:
+  dirsfirst:
+    name: Prvo direktorijumi
+    description: >-
+      Ova opcija omogućava prikazivanje direktorijuma pre datoteka u stablu
+      pregledača datoteka.
+  enforce_basepath:
+    name: Ograniči na osnovnu putanju
+    description: >-
+      Ako je podešeno na `true`, pristup je ograničen na datoteke unutar
+      direktorijuma `/config`.
+  git:
+    name: Git
+    description: >-
+      Ako je podešeno na `true`, aplikacija će inicijalizovati git za direktorijume
+      koji ga podržavaju.
+  ignore_pattern:
+    name: Šablon za ignorisanje
+    description: >-
+      Ova opcija omogućava sakrivanje datoteka i fascikli iz stabla pregledača
+      datoteka.
+  log_level:
+    name: Nivo evidencije (Log Level)
+    description: >-
+      Određuje obim beleženja evidencije uređivača datoteka. Na nivou `info` beleži
+      se svaki veb zahtev, uključujući Docker proveru ispravnosti na svakih 30 sekundi;
+      `warning` beleži samo probleme.
+  ssh_keys:
+    name: SSH ključevi
+    description: >-
+      Lista naziva datoteka koje sadrže privatne SSH ključeve. Mogu se koristiti za
+      omogućavanje pristupa udaljenim git repozitorijumima.
