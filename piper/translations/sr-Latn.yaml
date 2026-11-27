@@ -1,7 +1,7 @@
 ---
 configuration:
   backend:
-    name: Pozadinski sistem (Backend)
+    name: Pozadinski sistem
     description: >-
       Sistem za pretvaranje teksta u govor. `piper` je brz i radi na svakom
       hardveru. `omnivoice` je eksperimentalan: znatno je kvalitetniji i podržava
@@ -20,12 +20,12 @@ configuration:
       Broj govornika koji se koristi ako glas podržava više govornika.
       Podrazumevano se koristi prvi govornik (govornik 0).
   length_scale:
-    name: Brzina govora (Length scale)
+    name: Brzina govora
     description: >-
       Ubrzava ili usporava glas. Vrednost 1.0 označava podrazumevanu brzinu
       govora, pri čemu je < 1.0 brže, a > 1.0 sporije.
   noise_scale:
-    name: Nivo šuma (Noise scale)
+    name: Nivo šuma
     description: >-
       Kontroliše varijabilnost zvuka dodavanjem šuma tokom generisanja govora.
       Efekat u velikoj meri zavisi od samog glasa, ali uopšteno vrednost 0
@@ -63,8 +63,8 @@ configuration:
       Potrebno je i da ponovo učitate Wyoming integraciju za Piper u Home
       Assistant-u kako biste videli nove glasove.
   debug_logging:
-    name: Evidencija za otklanjanje grešaka (Debug)
+    name: Evidencija za otklanjanje grešaka
     description: >-
-      Upisuje poruke DEBUG nivoa u evidenciju (log) aplikacije.
+      Upisuje poruke DEBUG nivoa u evidenciju aplikacije.
 network:
   10200/tcp: Piper Wyoming protokol
