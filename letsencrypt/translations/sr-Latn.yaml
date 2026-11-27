@@ -15,7 +15,7 @@ configuration:
     name: Datoteka sertifikata
     description: Putanja na koju će biti smeštena datoteka sertifikata.
   challenge:
-    name: Provera (Challenge)
+    name: Provera
     description: Vrsta provere koja se koristi za potvrdu vlasništva nad domenom.
   acme_server:
     name: Prilagođeni ACME server
