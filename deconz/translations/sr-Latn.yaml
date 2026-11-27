@@ -1,0 +1,42 @@
+---
+configuration:
+  device:
+    name: Uređaji
+    description: Adresa uređaja vašeg ConBee/RaspBee adaptera.
+  dbg_info:
+    name: Debug informacije
+  dbg_aps:
+    name: Debug APS
+  dbg_zcl:
+    name: Debug ZCL
+  dbg_zdp:
+    name: Debug ZDP
+  dbg_ddf:
+    name: Debug DDF
+  dbg_dev:
+    name: Debug DEV
+  dbg_ota:
+    name: Debug OTA
+  dbg_error:
+    name: Debug greške
+  dbg_http:
+    name: Debug HTTP
+  ota_update:
+    name: Zigbee OTA ažuriranja
+    description: >-
+      Automatski preuzima dostupna ažuriranja Zigbee firmvera kada je
+      uključeno.
+    fields:
+      bosch:
+        name: Bosch
+      ikea:
+        name: IKEA
+      ledvance:
+        name: OSRAM/LEDVANCE
+network:
+  40850/tcp: >-
+    API pozadinski servis (Pristup za Phoscon i REST API izvan aplikacije)
+  5900/tcp: >-
+    VNC (Pristup grafičkom interfejsu putem spoljnog VNC pregledača. Nije zaštićeno!)
+  8081/tcp: >-
+    WebSocket (Povezivanje sa drugim aplikacijama, kao što je Node-RED)
