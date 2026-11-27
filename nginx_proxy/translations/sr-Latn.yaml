@@ -1,0 +1,44 @@
+---
+configuration:
+  domain:
+    name: Domen
+    description: Naziv domena koji će se koristiti za proksi.
+  hsts:
+    name: HSTS
+    description: >-
+      Vrednost HSTS HTTP zaglavlja koje se šalje. Ako je prazno, zaglavlje se ne šalje.
+  certfile:
+    name: Datoteka sertifikata
+    description: >-
+      Datoteka sertifikata iz direktorijuma `/ssl` koja će se koristiti.
+  keyfile:
+    name: Datoteka privatnog ključa
+    description: Datoteka privatnog ključa iz direktorijuma `/ssl` koja će se koristiti.
+  cloudflare:
+    name: CloudFlare
+    description: >-
+      Ako je uključeno, podešava Nginx sa listom IP adresa direktno sa
+      Cloudflare-a koje će se koristiti za direktivu `set_real_ip_from` u Nginx
+      konfiguraciji.
+  use_ssl_backend:
+    name: Koristi SSL pozadinski server
+    description: >-
+      Ako je uključeno, podešava Nginx da koristi SSL za povezivanje sa pozadinskim serverom.
+  client_max_body_size_megabytes:
+    name: Maksimalna veličina zahteva (u MB)
+    description: >-
+      Podešava Nginx da ograniči maksimalnu dozvoljenu veličinu tela klijentskog
+      zahteva, izraženu u megabajtima. Postavite na 0 za zahteve bilo koje veličine.
+  customize:
+    name: Prilagođavanje
+    description: >-
+      Pogledajte karticu Dokumentacija za više informacija o ovim opcijama.
+  real_ip_from:
+    name: Stvarna IP adresa od (omogućava PROXY protokol)
+    description: >-
+      Podešava Nginx da koristi TCP Proxy protokol,
+      određuje kojoj IP adresi se veruje za dolazne TLS zahteve.
+network:
+  443/tcp: HTTPS (SSL) port
+  443/udp: HTTP/3 (QUIC) port, postavite na isti kao HTTPS (SSL) port da biste omogućili HTTP/3
+  80/tcp: HTTP (ne-SSL) port
