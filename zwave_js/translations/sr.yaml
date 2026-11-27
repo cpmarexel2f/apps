@@ -1,94 +1,94 @@
 ---
 configuration:
   device:
-    name: Uređaj
-    description: Uređaj Z-Wave kontrolera.
+    name: Уређај
+    description: Уређај Z-Wave контролера.
   socket:
-    name: Soket (Socket)
+    name: Сокет
     description: >-
-      Umesto korišćenja fizičkog uređaja, možete se povezati sa Z-Wave
-      adapterom putem soketa.
+      Уместо коришћења физичког уређаја, можете се повезати са Z-Wave
+      адаптером путем сокета.
   log_level:
-    name: Nivo evidencije (Log Level)
-    description: Ova opcija podešava nivo beleženja događaja za Z-Wave JS.
+    name: Ниво евиденције
+    description: Ова опција подешава ниво бележења догађаја за Z-Wave JS.
   log_to_file:
-    name: Čuvanje evidencije u datoteci?
+    name: Чување евиденције у датотеци?
     description: >-
-      Kada je ova opcija uključena, zapisi će se čuvati u fascikli
-      `/addon_configs/core_zwave_js` sa ekstenzijom `.log`.
+      Када је ова опција укључена, записи ће се чувати у фасцикли
+      `/addon_configs/core_zwave_js` са екстензијом `.log`.
   log_max_files:
-    name: Maksimalan broj datoteka evidencije
+    name: Максималан број датотека евиденције
     description: >-
-      Kada je opcija `log_to_file` uključena, Z-Wave JS kreira novu datoteku
-      evidencije za svaki dan. Ova opcija vam omogućava da odredite maksimalan
-      broj datoteka koje Z-Wave JS čuva.
+      Када је опција `log_to_file` укључена, Z-Wave JS креира нову датотеку
+      евиденције за сваки дан. Ова опција вам омогућава да одредите максималан
+      број датотека које Z-Wave JS чува.
   network_key:
-    name: Mrežni ključ
+    name: Мрежни кључ
     description: >-
-      U prethodnim verzijama aplikacije ovo je bio jedini potreban ključ.
-      Uvođenjem S2 bezbednosnog uključivanja u zwave-js, ova opcija je
-      zastarela.
+      У претходним верзијама апликације ово је био једини потребан кључ.
+      Увођењем S2 безбедносног укључивања у zwave-js, ова опција је
+      застарела.
   rf_region:
-    name: Radio-frekvencijski region
-    description: Radio-frekvencijski region koji kontroler treba da koristi.
+    name: Радио-фреквенцијски регион
+    description: Радио-фреквенцијски регион који контролер треба да користи.
   s0_legacy_key:
-    name: Zastareli S0 ključ (Legacy)
+    name: Застарели S0 кључ
     description: >-
-      Z-Wave uređaji sa S0 bezbednošću zahtevaju mrežni ključ pre dodavanja u
-      mrežu.
+      Z-Wave уређаји са S0 безбедношћу захтевају мрежни кључ пре додавања у
+      мрежу.
   s2_access_control_key:
-    name: S2 ključ za kontrolu pristupa (Access Control)
+    name: S2 кључ за контролу приступа
     description: >-
-      Ovaj ključ je neophodan za dodavanje uređaja sa S2 Access Control
-      bezbednosnom klasom.
+      Овај кључ је неопходан за додавање уређаја са S2 Access Control
+      безбедносном класом.
   s2_authenticated_key:
-    name: S2 autentifikovani ključ (Authenticated)
+    name: S2 аутентификовани кључ
     description: >-
-      Ovaj ključ je neophodan za dodavanje uređaja sa S2 Authenticated
-      bezbednosnom klasom.
+      Овај кључ је неопходан за додавање уређаја са S2 Authenticated
+      безбедносном класом.
   s2_unauthenticated_key:
-    name: S2 neautentifikovani ključ (Unauthenticated)
+    name: S2 неаутентификовани кључ
     description: >-
-      Ovaj ključ je neophodan za dodavanje uređaja sa S2 Unauthenticated
-      bezbednosnom klasom.
+      Овај кључ је неопходан за додавање уређаја са S2 Unauthenticated
+      безбедносном класом.
   lr_s2_access_control_key:
-    name: Z-Wave Long Range S2 ključ za kontrolu pristupa
+    name: Z-Wave Long Range S2 кључ за контролу приступа
     description: >-
-      Ovaj ključ je neophodan za dodavanje uređaja koji koriste Z-Wave Long
-      Range sa S2 Access Control bezbednosnom klasom.
+      Овај кључ је неопходан за додавање уређаја који користе Z-Wave Long
+      Range са S2 Access Control безбедносном класом.
   lr_s2_authenticated_key:
-    name: Z-Wave Long Range S2 autentifikovani ključ
+    name: Z-Wave Long Range S2 аутентификовани кључ
     description: >-
-      Ovaj ključ je neophodan za dodavanje uređaja koji koriste Z-Wave Long
-      Range sa S2 Authenticated bezbednosnom klasom.
+      Овај кључ је неопходан за додавање уређаја који користе Z-Wave Long
+      Range са S2 Authenticated безбедносном класом.
   soft_reset:
-    name: Meko resetovanje kontrolera serije 500 (Soft-reset)
+    name: Софт ресетовање контролера серије 500
     description: >-
-      Ovo podešavanje određuje kako aplikacija rukuje mekim resetovanjem za
-      kontrolere serije 500. Podrazumevana opcija, Automatski, nalaže aplikaciji
-      da sama prepozna da li ovu funkciju treba uključiti. Podrazumevana vrednost
-      odgovara većini korisnika, pa je menjajte samo ako znate šta radite i/ili
-      ako vam je to zatraženo.
+      Ово подешавање одређује како апликација рукује меким ресетовањем за
+      контролере серије 500. Подразумевана опција, Аутоматски, налаже апликацији
+      да сама препозна да ли ову функцију треба укључити. Подразумевана вредност
+      одговара већини корисника, па је мењајте само ако знате шта радите и/или
+      ако вам је то затражено.
   disable_controller_recovery:
-    name: Onemogući automatski oporavak kontrolera
+    name: Онемогући аутоматски опоравак контролера
     description: >-
-      Ovo podešavanje isključuje automatski proces oporavka u Z-Wave JS-u kada
-      kontroler prestane da reaguje i umesto toga prepušta kontroleru da se sam
-      oporavi, ukoliko je za to sposoban. Dok kontroler ne reaguje, komande će
-      početi da otkazuju, a čvorovi mogu nasumično biti označeni kao nedostupni.
-      Ako kontroler ne uspe sam da se oporavi, moraćete ponovo da pokrenete
-      aplikaciju. U većini slučajeva korisnicima ova opcija nikada neće biti
-      potrebna, pa je menjajte samo ako znate šta radite i/ili ako vam je to
-      zatraženo.
+      Ово подешавање искључује аутоматски процес опоравка у Z-Wave JS-у када
+      контролер престане да реагује и уместо тога препушта контролеру да се сам
+      опорави, уколико је за то способан. Док контролер не реагује, команде ће
+      почети да отказују, а чворови могу насумично бити означени као недоступни.
+      Ако контролер не успе сам да се опорави, мораћете поново да покренете
+      апликацију. У већини случајева корисницима ова опција никада неће бити
+      потребна, па је мењајте само ако знате шта радите и/или ако вам је то
+      затражено.
   disable_watchdog:
-    name: Onemogući Z-Wave JS (hardverski) watchdog
+    name: Онемогући Z-Wave JS (хардверски) watchdog
     description: >-
-      Ovo podešavanje sprečava Z-Wave JS da uključi hardverski watchdog na
-      kontrolerima koji ga podržavaju. U većini slučajeva korisnicima ova
-      opcija nikada neće biti potrebna, pa je menjajte samo ako znate šta
-      radite i/ili ako vam je to zatraženo.
+      Ово подешавање спречава Z-Wave JS да укључи хардверски watchdog на
+      контролерима који га подржавају. У већини случајева корисницима ова
+      опција никада неће бити потребна, па је мењајте само ако знате шта
+      радите и/или ако вам је то затражено.
   safe_mode:
-    name: Омогући безбедни режим (Safe Mode)
+    name: Омогући безбедни режим
     description: >-
       Ово подешавање пребацује вашу мрежу у безбедни режим, што може значајно
       смањити перформансе ваше мреже, али такође може помоћи да се мрежа
