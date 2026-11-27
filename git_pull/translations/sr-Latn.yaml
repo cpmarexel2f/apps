@@ -1,0 +1,55 @@
+---
+configuration:
+  repository:
+    name: Repozitorijum
+    description: Git URL adresa vašeg repozitorijuma.
+  git_branch:
+    name: Git grana
+    description: >-
+      Naziv grane Git repozitorijuma. Ako ostavite prazno, ažuriraće se
+      trenutno aktivna grana. Ostavite vrednost 'master' ako niste sigurni.
+  git_remote:
+    name: Udaljeni Git repozitorijum
+    description: >-
+      Naziv praćenog repozitorijuma. Ostavite vrednost `origin` ako niste sigurni.
+  auto_restart:
+    name: Automatsko ponovno pokretanje
+    description: >-
+      Ponovo pokreće Home Assistant kada se konfiguracija promeni (i ako je ispravna).
+  restart_ignore:
+    name: Izuzeci od ponovnog pokretanja
+    description: >-
+      Kada je omogućeno `auto_restart`, izmene u ovim datotekama neće pokrenuti
+      ponovno pokretanje HA-a. Mogu se navesti i celi direktorijumi za ignorisanje.
+  git_command:
+    name: Git komanda
+    description: Komanda koja se izvršava. Ostavite vrednost `pull` ako niste sigurni.
+  git_prune:
+    name: Git čišćenje
+    description: >-
+      Ako je omogućeno, aplikacija će ukloniti grane koje su obrisane na
+      udaljenom repozitorijumu, ali i dalje postoje u kešu na lokalnoj mašini.
+      Ostavite vrednost `false` ako niste sigurni.
+  deployment_key:
+    name: Ključ za postavljanje
+    description: >-
+      Privatni SSH ključ koji će se koristiti za komunikaciju tokom Git
+      operacija.
+  deployment_user:
+    name: Korisnik za postavljanje
+    description: >-
+      Korisničko ime koje se koristi prilikom autentifikacije na repozitorijumu
+      pomoću korisničkog imena i lozinke.
+  deployment_password:
+    name: Lozinka za postavljanje
+    description: >-
+      Lozinka koja se koristi prilikom autentifikacije na repozitorijumu. Zanemaruje
+      se ako `deployment_user` nije podešen.
+  deployment_key_protocol:
+    name: Protokol ključa za postavljanje
+    description: Protokol ključa
+  repeat:
+    name: Periodična provera
+    description: >-
+      Podešava aplikaciju Git pull da automatski i periodično proverava da li
+      postoje ažuriranja u repozitorijumu.
