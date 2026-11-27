@@ -1,7 +1,7 @@
 ---
 configuration:
   debug_logging:
-    name: Evidencija za otklanjanje grešaka (Debug)
+    name: Evidencija za otklanjanje grešaka
     description: >-
       Omogući evidenciju za otklanjanje grešaka.
 network:
