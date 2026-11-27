@@ -1,0 +1,70 @@
+---
+configuration:
+  backend:
+    name: Pozadinski sistem (Backend)
+    description: >-
+      Sistem za pretvaranje teksta u govor. `piper` je brz i radi na svakom
+      hardveru. `omnivoice` je eksperimentalan: znatno je kvalitetniji i podržava
+      kloniranje glasa, ali je mnogo sporiji i zahteva desktop ili serverski
+      procesor. Radiće i na drugom hardveru, ali očekujte da bude prespor
+      za praktičnu upotrebu.
+  voice:
+    name: Glas
+    description: >-
+      Piper glas koji će se koristiti. Glasovi su imenovani prema sledećoj
+      šemi: `<jezik>-<ime>-<kvalitet>`. Zanemaruje se kada je pozadinski sistem
+      `omnivoice`, koji bira glas za svaki pojedinačni zahtev.
+  speaker:
+    name: Govornik
+    description: >-
+      Broj govornika koji se koristi ako glas podržava više govornika.
+      Podrazumevano se koristi prvi govornik (govornik 0).
+  length_scale:
+    name: Brzina govora (Length scale)
+    description: >-
+      Ubrzava ili usporava glas. Vrednost 1.0 označava podrazumevanu brzinu
+      govora, pri čemu je < 1.0 brže, a > 1.0 sporije.
+  noise_scale:
+    name: Nivo šuma (Noise scale)
+    description: >-
+      Kontroliše varijabilnost zvuka dodavanjem šuma tokom generisanja govora.
+      Efekat u velikoj meri zavisi od samog glasa, ali uopšteno vrednost 0
+      uklanja varijabilnost, dok vrednosti iznad 1 počinju da kvare zvuk.
+  noise_w:
+    name: Ritam govora
+    description: >-
+      Kontroliše varijabilnost ritma govora (trajanje fonema). Efekat u velikoj
+      meri zavisi od samog glasa, ali uopšteno vrednost 0 uklanja varijabilnost,
+      dok vrednosti iznad 1 izazivaju izrazito zamuckivanje i pauze.
+  sentence_silence:
+    name: Tišina nakon rečenice
+    description: >-
+      Dodaje zadati broj sekundi tišine posle svake rečenice.
+  omnivoice_steps:
+    name: OmniVoice koraci
+    description: >-
+      Broj koraka dekodiranja za `omnivoice` pozadinski sistem. Manje koraka
+      znači brži rad, a više koraka bolji zvuk. Koristi se samo kada je izabran
+      `omnivoice`.
+  enable_japanese:
+    name: Podrška za japanski jezik
+    description: >-
+      Preuzima japanski fonemizer, neophodan za glasove na japanskom jeziku. Pri
+      prvom uključivanju preuzima se oko 350 MB podataka.
+  enable_thai:
+    name: Podrška za tajlandski jezik
+    description: >-
+      Preuzima tajlandski fonemizer, neophodan za glasove na tajlandskom jeziku. Pri
+      prvom uključivanju preuzima se oko 390 MB podataka.
+  update_voices:
+    name: Ažuriranje glasova
+    description: >-
+      Automatski preuzima listu novih glasova pri svakom pokretanju aplikacije.
+      Potrebno je i da ponovo učitate Wyoming integraciju za Piper u Home
+      Assistant-u kako biste videli nove glasove.
+  debug_logging:
+    name: Evidencija za otklanjanje grešaka (Debug)
+    description: >-
+      Upisuje poruke DEBUG nivoa u evidenciju (log) aplikacije.
+network:
+  10200/tcp: Piper Wyoming protokol
